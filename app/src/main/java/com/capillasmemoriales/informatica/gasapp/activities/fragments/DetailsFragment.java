@@ -51,13 +51,10 @@ public class DetailsFragment extends Fragment {
 
     private List<Detail> listDetails;
     private RecyclerView rvDetails;
-    private CardView cvDetails;
     private TextView txtCard, txtTo, txtFrom, txtMsg;
     private Period per;
 
     private ProgressDialog dialog;
-
-    //private JSONParser jsonParser = new JSONParser();
 
     private int response_id;
     private String message;
@@ -342,10 +339,7 @@ public class DetailsFragment extends Fragment {
         getView().setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if (event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK) {
-                    return true;
-                }
-                return false;
+                return event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK;
             }
         });
     }
