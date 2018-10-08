@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name" translatable="false">App Combustible</string>
+
+    <!--Options-->
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancelar</string>
+    <string name="alert">Alerta</string>
+    <string name="error">Error</string>
+
+    <!--Login-->
+    <string name="mobile_network">Conectado vía datos móviles</string>
+    <string name="wifi_network">Conectado vía Wi-Fi</string>
+    <string name="no_network">Debe conectarse a una red</string>
+    <string name="open_network_settings">Abrir opciones de red</string>
+    <string name="id">Código de empleado:</string>
+    <string name="password">Contraseña:</string>
+    <string name="remember">Recordarme</string>
+    <string name="login">Entrar</string>
+    <string name="loading">Cargando</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="required">Este campo es requerido</string>
+    <string name="error_login">Código incorrecto o contraseña incorrecta</string>
+    <string name="eId">Código inválido</string>
+    <string name="ePass">Contraseña demasiado corta</string>
+    <string name="wait">Por favor espere</string>
+    <string name="fetch">Buscando datos en el servidor…</string>
+    <string name="empty">Todos los campos marcados con * son requeridos</string>
+
+    <!--Tabs-->
+    <string name="tab">Consumo de combustible</string>
+
+
+    <!--Detail Fields-->
+    <string name="asterisk" translatable="false">*</string>
+    <string name="FC">Crédito Fiscal:</string>
+    <string name="TI">Código de transacción:</string>
+    <string name="date">Fecha:</string>
+    <string name="gl">gl</string>
+    <string name="value">$</string>
+
+    <!--Add-->
+    <string name="add_detail">Agregar detalle</string>
+    <string name="adding_detail">Agregando nuevo detalle…</string>
+    <string name="add_ok">Detalle de consumo agregado correctamente</string>
+    <string name="add_error">Error al agregar el detalle de consumo, intente de nuevo por favor</string>
+    <!--Edit-->
+    <string name="edit_detail">Editar detalle</string>
+    <string name="editing_detail">Editaando detalle…</string>
+    <string name="edit_ok">Detalle actualizado</string>
+    <string name="edit_error">Error al actualizar datos del detalle de consumo, intente de nuevo por favor</string>
+    <string name="save">Actualizar datos</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FloatingDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/txtCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_size_med"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:gravity="end"
+                android:textStyle="italic"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_size_mini"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/txtFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:gravity="end"
+                android:textStyle="italic"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_size_mini"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/detail_recycler_view" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        fab:fab_addButtonSize="normal"
+        app:fab_addButtonPlusIconColor="@color/red"
+        fab:fab_addButtonColorNormal="@color/blue"
+        fab:fab_addButtonColorPressed="@color/blue_alt"
+        fab:fab_labelStyle="@style/Texts"
+        fab:fab_labelsPosition="right">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            fab:fab_icon="@drawable/add"
+            fab:fab_title="@string/add_detail"
+            fab:fab_colorNormal="@color/gold"
+            app:fab_colorPressed="@color/gold_alt"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/fab_margin">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--FC-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/asterisk"
+                    android:textColor="@color/green"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:paddingTop="5dp"
+                        android:id="@+id/txtFC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="@string/FC"
+                        android:textColor="@color/green"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/font_size_big"
+                        android:inputType="number"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <!--TI-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/asterisk"
+                    android:textColor="@color/green"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:paddingTop="5dp"
+                        android:id="@+id/txtTI"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="@string/TI"
+                        android:textColor="@color/green"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/font_size_big"
+                        android:inputType="number"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <!--GL & Val -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:orientation="horizontal">
+                <!--GL-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/asterisk"
+                        android:layout_gravity="center"
+                        android:textColor="@color/green"/>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:paddingTop="5dp"
+                            android:id="@+id/txtGL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="@string/gl"
+                            android:textColor="@color/green"
+                            android:textColorHint="@color/blue"
+                            android:inputType="numberDecimal"
+                            android:digits="0123456789."
+                            android:textSize="@dimen/font_size_big"/>
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+                <!--Val-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/asterisk"
+                        android:layout_gravity="center"
+                        android:textColor="@color/green"/>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:paddingTop="5dp"
+                            android:id="@+id/txtVal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="@string/value"
+                            android:textColor="@color/green"
+                            android:textColorHint="@color/blue"
+                            android:inputType="numberDecimal"
+                            android:digits="0123456789."
+                            android:textSize="@dimen/font_size_big"/>
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:orientation="vertical"
+    android:id="@+id/parentLayout">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:background="@drawable/bg_card">
+        <!--Img-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/list"/>
+        </LinearLayout>
+        <!--FC & TI & Date-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="82">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtCF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/FC"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_size_big"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txtTI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TI"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_size_big"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_size_med"
+                    android:textColor="@color/black_alt"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--GL & $-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="16"
+            android:paddingStart="0dp"
+            android:paddingEnd="5dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtGL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gl"
+                android:textStyle="italic"
+                android:textSize="@dimen/font_size_med"
+                android:textColor="@color/gold_alt"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_big"/>
+
+            <TextView
+                android:id="@+id/txtVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/value"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_big"
+                android:textColor="@color/green_alt"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

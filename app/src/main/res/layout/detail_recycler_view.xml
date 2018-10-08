@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.FloatingDetail"
+    android:id="@+id/container">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDetails"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/font_size_med">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/txtMsg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="@dimen/font_size_big_alt"
+        android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>
